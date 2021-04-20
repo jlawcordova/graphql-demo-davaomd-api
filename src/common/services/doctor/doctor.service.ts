@@ -1,6 +1,5 @@
 import { Injectable } from '@nestjs/common';
 import { Doctor } from 'src/common/models/doctor.model';
-import { Schedule } from 'src/common/models/schedule.model';
 
 @Injectable()
 export class DoctorService {

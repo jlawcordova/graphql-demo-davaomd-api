@@ -1,0 +1,32 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Hospital {
+  name: String
+  location: String
+}
+
+type ScheduleTime {
+  weekDays: String
+  startTime: String
+  endTime: String
+}
+
+type Schedule {
+  hospital: Hospital
+  building: String
+  contactNumbers: [String!]
+  scheduleTime: [ScheduleTime!]
+}
+
+type Doctor {
+  name: String
+  specialty: String
+  photo: String
+  schedule: [Schedule]!
+}
+
+type Query {
+  doctor: Doctor!
+}
