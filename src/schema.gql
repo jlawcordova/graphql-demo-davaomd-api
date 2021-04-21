@@ -25,6 +25,12 @@ type Doctor {
   specialty: String
   photo: String
   schedule: [Schedule]!
+  rating: Rating!
+}
+
+type Rating {
+  rating: Float!
+  count: Int!
 }
 
 type Query {
